@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* ─────────────────────────────────────────────────────────
+       COLOUR VARIABLES
+       Format: hue saturation% lightness%  (HSL, no 'hsl()' wrapper)
+       Examples:
+         0 0% 4%      = near black
+         0 0% 100%    = white
+         265 89% 76%  = the current purple accent
+         210 100% 56% = a bright blue accent
+    ───────────────────────────────────────────────────────── */
+
+    /* CUSTOMISE: Page background colour — currently near-black */
+    --background: 0 0% 4%;
+
+    /* CUSTOMISE: Default text colour — currently near-white */
+    --foreground: 240 7% 97%;
+
+    /* CUSTOMISE: Card / panel background colour */
+    --card: 240 3% 9%;
+    --card-foreground: 240 7% 97%;
+
+    --popover: 240 3% 9%;
+    --popover-foreground: 240 7% 97%;
+
+    /* CUSTOMISE: PRIMARY / ACCENT COLOUR — used for headings on hover,
+       section number labels, animated lines, buttons, icons, scrollbar thumb,
+       and text selection highlight. Currently a soft purple.
+       To change the whole accent colour, edit ONLY this line and --primary-foreground. */
+    --primary: 265 89% 76%;
+
+    /* CUSTOMISE: Text colour that appears ON TOP of the primary/accent colour
+       (e.g. text inside a filled primary button). Keep dark if primary is light. */
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 240 3% 9%;
+    --secondary-foreground: 240 7% 97%;
+
+    /* CUSTOMISE: Muted / subdued text colour — used for subtitles, captions, labels */
+    --muted: 0 0% 50%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 265 89% 76%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* CUSTOMISE: Border / divider line colour */
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+
+    /* CUSTOMISE: Focus ring colour (keyboard navigation outline) */
+    --ring: 265 89% 76%;
+
+    --chart-1: 265 89% 76%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 3% 9%;
+    --sidebar-foreground: 240 7% 97%;
+    --sidebar-primary: 265 89% 76%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 240 3% 12%;
+    --sidebar-accent-foreground: 240 7% 97%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 265 89% 76%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 240 7% 97%;
+    --card: 240 3% 9%;
+    --card-foreground: 240 7% 97%;
+    --popover: 240 3% 9%;
+    --popover-foreground: 240 7% 97%;
+    --primary: 265 89% 76%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 240 3% 9%;
+    --secondary-foreground: 240 7% 97%;
+    --muted: 0 0% 50%;
+    --muted-foreground: 0 0% 50%;
+    --accent: 265 89% 76%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 265 89% 76%;
+    --chart-1: 265 89% 76%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 3% 9%;
+    --sidebar-foreground: 240 7% 97%;
+    --sidebar-primary: 265 89% 76%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 240 3% 12%;
+    --sidebar-accent-foreground: 240 7% 97%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 265 89% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+}
+
+/* CUSTOMISE: Scrollbar colours */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 4%);   /* CUSTOMISE: Scrollbar track colour (matches background) */
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(265 89% 76% / 0.3);  /* CUSTOMISE: Scrollbar handle colour */
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(265 89% 76% / 0.6);  /* CUSTOMISE: Scrollbar handle colour on hover */
+}
+
+/* CUSTOMISE: Text selection highlight colour */
+::selection {
+  background: hsl(265 89% 76% / 0.3);  /* CUSTOMISE: Selection background */
+  color: hsl(240 7% 97%);              /* CUSTOMISE: Selected text colour */
+}

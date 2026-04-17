@@ -1,0 +1,19 @@
+# Render deployment configuration
+# This file tells Render how to build and serve your portfolio.
+# Remember to commit this file to GitHub — Render will read it automatically.
+
+services:
+  - type: web
+    name: jose-portfolio          # CUSTOMISE: Change to your preferred service name on Render
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true  # Enables preview URLs for PRs
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html    # Required for React Router single-page apps
