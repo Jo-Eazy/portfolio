@@ -18,7 +18,7 @@ const projects = [
     year: '2025',
     tools: 'HTML5 / CSS3 / JavaScript',
     // CUSTOMISE: Replace with '/images/project-1.jpg' once you add your own image
-    image: 'public/images/Counterfeit Google Form.png',
+    image: 'dist/images/Counterfeit Google Form.png',
     link: 'https://github.com/Jo-Eazy/Personal-Projects.git',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     year: '2025',
     tools: 'HTML5 / CSS3 / JavaScript',
     // CUSTOMISE: Replace with '/images/project-2.jpg' once you add your own image
-    image: 'public/images/ModernTech HR.png',
+    image: 'dist/images/ModernTech HR.png',
     link: 'https://github.com/Jo-Eazy/Core-Project.git',
   },
 ];

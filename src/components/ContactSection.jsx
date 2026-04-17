@@ -114,7 +114,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-3">
               {/* CUSTOMISE: Your LinkedIn URL */}
               <a
-                href="https://www.linkedin.com/in/jose-dhlamini-30b1212b7/"
+                href="www.linkedin.com/in/jose-dhlamini-30b1212b7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-lg font-inter font-light text-foreground hover:text-primary transition-colors duration-300"
