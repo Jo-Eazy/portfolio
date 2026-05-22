@@ -17,18 +17,32 @@ const projects = [
     category: 'Frontend Development',
     year: '2025',
     tools: 'HTML5 / CSS3 / JavaScript',
+    role: 'Solo Frontend Developer',
+    summary: 'A browser-based form interface built to practise responsive layouts, reusable UI patterns, and dynamic form interactions.',
+    impact: [
+      'Built responsive form screens for desktop and mobile users',
+      'Structured JavaScript interactions for a smoother form-building flow',
+      'Focused on clean HTML/CSS foundations and accessible controls',
+    ],
     // CUSTOMISE: Replace with '/images/project-1.jpg' once you add your own image
     image: '/images/Counterfeit Google Form.png',
-    link: 'https://github.com/Jo-Eazy/Personal-Projects.git',
+    codeLink: 'https://github.com/Jo-Eazy/Personal-Projects.git',
   },
   {
     title: 'ModernTech — HR System ',
     category: 'Full Stack Collaboration',
     year: '2025',
     tools: 'HTML5 / CSS3 / JavaScript',
+    role: 'Team Developer',
+    summary: 'A collaborative HR system project focused on practical business workflows, team delivery, and maintainable web interfaces.',
+    impact: [
+      'Contributed to a team-built HR workflow for employee management',
+      'Applied SCRUM collaboration habits in a larger development team',
+      'Created user-facing interface work with attention to clarity and responsiveness',
+    ],
     // CUSTOMISE: Replace with '/images/project-2.jpg' once you add your own image
     image: '/images/ModernTech HR.png',
-    link: 'https://github.com/Jo-Eazy/Core-Project.git',
+    codeLink: 'https://github.com/Jo-Eazy/Core-Project.git',
   },
 ];
 

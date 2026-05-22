@@ -106,7 +106,7 @@ export default function Navigation() {
               {/* CUSTOMISE: Replace with your actual GitHub username */}
               <a href="https://github.com/Jo-Eazy" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
               {/* CUSTOMISE: Replace with your actual LinkedIn profile URL */}
-              <a href="www.linkedin.com/in/jose-dhlamini-30b1212b7" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/jose-dhlamini-30b1212b7/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
               <a href="mailto:josedhlamini9@gmail.com" className="hover:text-primary transition-colors">Email</a>
             </div>
           </motion.div>

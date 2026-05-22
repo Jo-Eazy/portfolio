@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, UsersRound } from 'lucide-react';
 
 // CUSTOMISE: Your technical skills organized by category.
 // Each skill needs:
@@ -12,8 +12,8 @@ const services = [
   {
     number: '01',
     title: 'Frontend Development',
-    description: 'Building responsive, interactive user interfaces with modern JavaScript frameworks and CSS3. Creating engaging experiences with animations and smooth interactions.',
-    tags: ['React', 'Vue.js', 'JavaScript', 'HTML5 / CSS3', 'Tailwind CSS'],
+    description: 'Building responsive, interactive user interfaces with React.js, TypeScript, and Tailwind CSS. Creating engaging experiences with animations and smooth interactions.',
+    tags: ['React', 'Vue.js', 'JavaScript', 'TypeScript', 'HTML5 / CSS3', 'Tailwind CSS'],
   },
   {
     number: '02',
@@ -31,7 +31,7 @@ const services = [
     number: '04',
     title: 'Soft Skills',
     description: 'Problem-solving, communication, and teamwork. Eager to learn, adapt quickly, and contribute effectively to team projects in an agile environment.',
-    tags: ['Communication', 'Collaboration', 'Agile', 'Adaptability', 'Problem Solving'],
+    tags: ['Communication', 'Collaboration', 'Remote Collaboration', 'Agile', 'SCRUM', 'Adaptability', 'Problem Solving'],
   },
 ];
 
@@ -43,6 +43,7 @@ const skillIcons = [
   { label: 'HTML5',      icon: 'html5',      color: '#E34F26' },
   { label: 'CSS3',       icon: 'css3',       color: '#1572B6' },
   { label: 'JavaScript', icon: 'javascript', color: '#F7DF1E' },
+  { label: 'TypeScript', icon: 'typescript', color: '#3178C6' },
   { label: 'React',      icon: 'react',      color: '#61DAFB' },
   { label: 'Vue.js',     icon: 'vuejs',      color: '#42B883' },
   { label: 'PHP',        icon: 'php',        color: '#777BB4' },
@@ -52,6 +53,7 @@ const skillIcons = [
   { label: 'GitHub',     icon: 'github',     color: '#ffffff' },
   { label: 'VS Code',    icon: 'vscode',     color: '#007ACC' },
   { label: 'Azure',      icon: 'azure',      color: '#0089D6' },
+  { label: 'SCRUM',      Icon: UsersRound,   color: '#7C3AED' },
 ];
 
 function ServiceRow({ service, index }) {
@@ -168,16 +170,25 @@ export default function ServicesSection() {
             >
               <div className="w-10 h-10 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                 {/* Devicon SVG loaded from CDN — replace 'icon' value in skillIcons array to change */}
-                <img
-                  src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.icon}/${skill.icon}-original.svg`}
-                  alt={`${skill.label} icon`}
-                  className="w-8 h-8 object-contain"
-                  onError={(e) => {
-                    // Fallback: show a plain text label if the CDN icon fails to load
-                    e.target.style.display = 'none';
-                    e.target.parentNode.querySelector('.icon-fallback').style.display = 'flex';
-                  }}
-                />
+                {skill.Icon ? (
+                  <skill.Icon
+                    className="w-8 h-8"
+                    style={{ color: skill.color }}
+                    strokeWidth={1.8}
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <img
+                    src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill.icon}/${skill.icon}-original.svg`}
+                    alt={`${skill.label} icon`}
+                    className="w-8 h-8 object-contain"
+                    onError={(e) => {
+                      // Fallback: show a plain text label if the CDN icon fails to load
+                      e.target.style.display = 'none';
+                      e.target.parentNode.querySelector('.icon-fallback').style.display = 'flex';
+                    }}
+                  />
+                )}
                 {/* Fallback label shown if CDN icon fails */}
                 <span
                   className="icon-fallback hidden w-8 h-8 items-center justify-center font-mono text-[8px] text-primary border border-primary/30 rounded-sm"
