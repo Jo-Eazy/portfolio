@@ -25,7 +25,7 @@ const services = [
     number: '03',
     title: 'Tools & Platforms',
     description: 'Version control, deployment, and development tools. Working with Git, GitHub, deployment platforms, and modern development environments.',
-    tags: ['Git', 'GitHub', 'VS Code', 'Vite', 'Microsoft Azure'],
+    tags: ['Git', 'GitHub', 'VS Code', 'Vite', 'Android Studio'],
   },
   {
     number: '04',
