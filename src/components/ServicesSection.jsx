@@ -48,6 +48,7 @@ const skillIcons = [
   { label: 'Vue.js',     icon: 'vuejs',      color: '#42B883' },
   { label: 'Flutter',    icon: 'flutter',    color: '#02569B' },
   { label: 'Dart',       icon: 'dart',       color: '#0175C2' },
+  { label: 'Android Studio', icon: 'androidstudio', color: '#3DDC84' },
   { label: 'PHP',        icon: 'php',        color: '#777BB4' },
   { label: 'Node.js',    icon: 'nodejs',     color: '#339933' },
   { label: 'Tailwind',   icon: 'tailwindcss',color: '#06B6D4' },
