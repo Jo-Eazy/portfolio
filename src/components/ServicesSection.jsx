@@ -12,8 +12,8 @@ const services = [
   {
     number: '01',
     title: 'Frontend Development',
-    description: 'Building responsive, interactive user interfaces with React.js, TypeScript, and Tailwind CSS. Creating engaging experiences with animations and smooth interactions.',
-    tags: ['React', 'Vue.js', 'JavaScript', 'TypeScript', 'HTML5 / CSS3', 'Tailwind CSS'],
+    description: 'Building responsive, interactive user interfaces with React.js, Flutter, TypeScript, and Tailwind CSS. Creating engaging experiences with animations and smooth interactions.',
+    tags: ['React', 'Vue.js', 'Flutter', 'JavaScript', 'TypeScript', 'HTML5 / CSS3', 'Tailwind CSS'],
   },
   {
     number: '02',
@@ -31,7 +31,7 @@ const services = [
     number: '04',
     title: 'Soft Skills',
     description: 'Problem-solving, communication, and teamwork. Eager to learn, adapt quickly, and contribute effectively to team projects in an agile environment.',
-    tags: ['Communication', 'Collaboration', 'Remote Collaboration', 'Agile', 'SCRUM', 'Adaptability', 'Problem Solving'],
+    tags: ['Communication', 'Collaboration', 'Open to Remote Work', 'Agile', 'SCRUM', 'Adaptability', 'Problem Solving'],
   },
 ];
 
@@ -46,6 +46,7 @@ const skillIcons = [
   { label: 'TypeScript', icon: 'typescript', color: '#3178C6' },
   { label: 'React',      icon: 'react',      color: '#61DAFB' },
   { label: 'Vue.js',     icon: 'vuejs',      color: '#42B883' },
+  { label: 'Flutter',    icon: 'flutter',    color: '#02569B' },
   { label: 'PHP',        icon: 'php',        color: '#777BB4' },
   { label: 'Node.js',    icon: 'nodejs',     color: '#339933' },
   { label: 'Tailwind',   icon: 'tailwindcss',color: '#06B6D4' },

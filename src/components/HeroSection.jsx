@@ -90,10 +90,10 @@ export default function HeroSection() {
           {/* CUSTOMISE: The subtitle paragraph below the main headline */}
           <div className="flex flex-col gap-4">
             <p className="font-inter text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-              Building responsive, dynamic web applications for product teams, with a focus on clean interfaces, reliable delivery, and remote collaboration.
+              Building responsive, dynamic web applications for product teams, with a focus on clean interfaces, reliable delivery, and being open to remote work.
             </p>
             <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-              Remote-ready for collaborative product teams
+              Open to Remote Work — Collaborative Product Teams
             </p>
             {/* CUSTOMISE: Update your name below if needed */}
             <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase">

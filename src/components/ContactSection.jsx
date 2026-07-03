@@ -76,7 +76,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Remote-ready for product teams that value clear communication, structured delivery, and reliable collaboration.
+            Open to remote work with product teams that value clear communication, structured delivery, and reliable collaboration.
           </motion.p>
 
           <motion.div
@@ -159,7 +159,7 @@ export default function ContactSection() {
             <div className="flex items-center gap-2 text-foreground">
               <Clock3 className="w-4 h-4 text-primary shrink-0" />
               <span className="text-xl md:text-2xl font-inter font-light">
-                Remote collaboration with flexible time-zone overlap
+                Open to remote work with flexible time-zone overlap
               </span>
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function ContactSection() {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
               </span>
               <span className="text-lg font-inter font-light text-foreground">
-                Open to remote opportunities with large tech teams
+                Open to remote work with large tech teams
               </span>
             </div>
           </div>

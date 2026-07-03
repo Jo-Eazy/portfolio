@@ -20,7 +20,7 @@ const capabilities = [
   {
     icon: Users,
     label: 'Collaboration',
-    desc: 'Working effectively in SCRUM teams, remote workflows, and user-focused product environments.',
+    desc: 'Working effectively in SCRUM teams, open to remote work, and user-focused product environments.',
   },
   {
     icon: Zap,
@@ -73,7 +73,7 @@ export default function AboutSection() {
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               I'm committed to continuous growth and consider myself a lifelong learner, eager to collaborate with talented teams to create something exciting,
               and building products that make a positive impact. I am based in Cape Town, South Africa, and
-              open to remote opportunities with collaborative product teams. I am comfortable working in SCRUM environments,
+              open to remote work with collaborative product teams. I am comfortable working in SCRUM environments,
               communicating clearly, and contributing to larger development teams.
             </p>
           </motion.div>
